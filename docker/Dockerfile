@@ -148,7 +148,7 @@ RUN cd /BEVFormer && git clone https://github.com/open-mmlab/mmdetection3d.git &
 
 # install timm
 RUN python -m pip install timm
-RUN pip install timm==0.6.12 torchmetrics==0.3.2 prettytable==3.5.0 einops fvcore seaborn iopath==0.1.9 timm==0.6.13  typing-extensions==4.5.0 pylint ipython==8.12  numpy==1.19.5 matplotlib==3.5.2 numba==0.48.0 pandas==1.4.4 scikit-image==0.19.3 setuptools==59.5.0
+RUN pip install torchmetrics==0.3.2 prettytable==3.5.0 einops fvcore seaborn iopath==0.1.9 timm==0.6.13  typing-extensions==4.5.0 pylint ipython==8.12  numpy==1.19.5 matplotlib==3.5.2 numba==0.48.0 pandas==1.4.4 scikit-image==0.19.3 setuptools==59.5.0
 RUN pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.9/index.html
 # detectron2 install
 # RUN python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
