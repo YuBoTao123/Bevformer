@@ -59,6 +59,7 @@ model = dict(
         with_cp=True, # using checkpoint to save GPU memory
         dcn=dict(type='DCNv2', deform_groups=1, fallback_on_stride=False), # original DCNv2 will print log when perform load_state_dict
         stage_with_dcn=(False, False, True, True)),
+        # stage_with_dcn=(False, False, False, False)),
     img_neck=dict(
         type='FPN',
         in_channels=[2048],
@@ -207,7 +208,7 @@ test_pipeline = [
 
 data = dict(
     samples_per_gpu=1,
-    workers_per_gpu=4,
+    workers_per_gpu=0,
     train=dict(
         type=dataset_type,
         data_root=data_root,

@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+import sys
+sys.path.append('/workspace/tools/') # tools 文件夹的实际路径 
 import mmcv
 import numpy as np
 import os
-
-from tools.data_converter.s3dis_data_utils import S3DISData, S3DISSegData
-from tools.data_converter.scannet_data_utils import ScanNetData, ScanNetSegData
-from tools.data_converter.sunrgbd_data_utils import SUNRGBDData
+from data_converter.s3dis_data_utils import S3DISData, S3DISSegData
+from data_converter.scannet_data_utils import ScanNetData, ScanNetSegData
+from data_converter.sunrgbd_data_utils import SUNRGBDData
 
 
 def create_indoor_info_file(data_path,

@@ -39,3 +39,5 @@ bevformer
 |   |   ├── nuscenes_infos_temporal_train.pkl
 |   |   ├── nuscenes_infos_temporal_val.pkl
 ```
+
+python tools/create_data.py nuscenes --root-path ./data/nuscenes --out-dir ./data/nuscenes --extra-tag nuscenes --version v1.0-mini --canbus ./data
